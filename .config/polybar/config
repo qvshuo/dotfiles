@@ -1,7 +1,7 @@
 [colors]
 background = #d8ffffff
 foreground = #0b141a
-foreground-alt = #d861707a
+foreground-alt = #61707a
 
 [bar/light]
 width = 100%
