@@ -1,0 +1,127 @@
+[colors]
+background = #d8ffffff
+foreground = #0b141a
+foreground-alt = #d861707a
+
+[bar/light]
+width = 100%
+height = 27
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 2
+
+border-size = 0
+
+padding-left = 2
+padding-right = 2
+
+module-margin-left = 2
+module-margin-right = 2
+
+font-0 = Sarasa Gothic SC:size=11;2
+font-1 = Font Awesome 5 Free Solid:style=Regular:size=10;1
+
+modules-left = bspwm
+modules-center = xwindow
+modules-right = download upload cpu memory xbacklight pulseaudio wireless-network battery date
+
+fixed-center = false
+
+tray-position = right
+tray-padding = 2
+
+cursor-click = pointer
+
+[module/bspwm]
+type = internal/bspwm
+
+label-focused = %index%
+label-focused-underline= ${colors.foreground}
+label-focused-padding = 2
+
+label-occupied = %index%
+label-occupied-padding = 2
+
+label-urgent = %index%!
+label-urgent-padding = 2
+
+label-empty = %index%
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 2
+
+[module/xwindow]
+type = internal/xwindow
+
+[module/download]
+type = internal/network
+interface = wlan0
+label-connected =  %downspeed%
+format-connected= <label-connected>
+
+[module/upload]
+type = internal/network
+interface =wlan0
+label-connected =  %upspeed%
+format-connected = <label-connected>
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+label = %percentage:2%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+label = %percentage_used%%
+
+[module/xbacklight]
+type = internal/xbacklight
+enable-scroll = true
+format = <label>
+label =  %percentage%%
+
+[module/pulseaudio]
+type = internal/pulseaudio
+use-ui-max = true
+interval = 5
+format-volume = <label-volume>
+label-volume =  %percentage%%
+label-muted =  Muted
+
+[module/wireless-network]
+type = internal/network
+interface = wlan0
+interval = 2
+format-connected =  <label-connected>
+label-connected = %essid%
+format-disconnected =  <label-disconnected>
+label-disconnected = %ifname% disconnected
+
+[module/battery]
+type = internal/battery
+battery = BAT1
+adapter = ACAD
+full-at = 98
+poll-interval = 5
+format-charging = <label-charging>
+format-discharging = <label-discharging>
+label-full =  %percentage%%
+label-charging =  %percentage%%
+label-discharging =  %percentage%%
+
+[module/date]
+type = internal/date
+interval = 1
+date = %a %b %d
+time = %H:%M %p
+label = %date%   %time%
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+; vim:ft=dosini
