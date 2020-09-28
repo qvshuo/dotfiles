@@ -12,7 +12,7 @@ super + d
 
 # windows switcher
 super + Tab
-	rofi -show window
+	rofi -show
 
 # make sxhkd reload its configuration files:
 super + Escape
