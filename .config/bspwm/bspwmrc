@@ -5,7 +5,7 @@ xsetroot -cursor_name left_ptr &
 picom &
 feh --bg-fill --randomize ~/Pictures/Background/* &
 $HOME/.config/polybar/launch.sh &
-redshift -l 34.14:108.58 &
+redshift &
 dunst &
 greenclip daemon &
 fcitx5 &
