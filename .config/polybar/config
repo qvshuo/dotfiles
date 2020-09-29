@@ -21,11 +21,12 @@ module-margin-left = 2
 module-margin-right = 2
 
 font-0 = Sarasa Gothic SC:size=11;2
-font-1 = Font Awesome 5 Free Solid:style=Regular:size=10;1
+font-1 = Font Awesome 5 Free Solid:style=Regular:size=11;1
+font-2 = Weather Icons:size=11;1
 
 modules-left = bspwm
 modules-center = xwindow
-modules-right = download upload cpu memory xbacklight pulseaudio wireless-network battery date
+modules-right = download upload cpu memory xbacklight pulseaudio wireless-network battery openweathermap-forecast date
 
 fixed-center = false
 
@@ -55,6 +56,10 @@ label-empty-padding = 2
 
 [module/xwindow]
 type = internal/xwindow
+format = <label>
+format-padding = 4
+label = %title%
+label-maxlen = 50
 
 [module/download]
 type = internal/network
@@ -92,7 +97,7 @@ use-ui-max = true
 interval = 5
 format-volume = <label-volume>
 label-volume =  %percentage%%
-label-muted =  Muted
+label-muted =  muted
 
 [module/wireless-network]
 type = internal/network
@@ -119,8 +124,14 @@ label-discharging =  %percentage%%
 type = internal/date
 interval = 1
 date = %a %b %d
-time = %H:%M %p
-label = %date%   %time%
+time = %I:%M %p
+label = %date%  %time%
+
+[module/openweathermap-forecast]
+type = custom/script
+exec = ~/.config/polybar/polybar-scripts/openweathermap-forecast.sh
+interval = 600
+label-font = 3
 
 [global/wm]
 margin-top = 0
