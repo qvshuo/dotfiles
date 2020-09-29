@@ -136,11 +136,11 @@ XF86MonBrightnessUp
 
 # screenshot
 super + shift + @s
-	scrot -s -e 'mv $f ~/Pictures/Screenshots/'
+	scrot -s -e 'mv $f ~/Pictures/Screenshots/' && notify-send 'scrot' '区域截图已保存至~/Pictures/Screenshots/' --icon=dialog-information
 super + Print
-	scrot -e 'mv $f ~/Pictures/Screenshots/'
+	scrot -e 'mv $f ~/Pictures/Screenshots/' && notify-send 'scrot' '全屏截图已保存至~/Pictures/Screenshots/' --icon=dialog-information
 alt + Print
-	scrot -bs -e 'mv $f ~/Pictures/Screenshots/'
+	scrot -bs -e 'mv $f ~/Pictures/Screenshots/' && notify-send 'scrot' '窗口截图已保存至~/Pictures/Screenshots/' --icon=dialog-information
 
 # explorer
 super + e
