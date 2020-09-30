@@ -144,8 +144,4 @@ alt + Print
 
 # explorer
 super + e
-	nautilus
-
-# clipboard
-super + v
-	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+	nautilus &
