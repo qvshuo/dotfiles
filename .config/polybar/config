@@ -26,7 +26,7 @@ font-2 = Weather Icons:size=12;2
 
 modules-left = bspwm
 modules-center = xwindow
-modules-right = download upload cpu memory xbacklight pulseaudio wireless-network battery date openweathermap-forecast
+modules-right = download upload cpu memory xbacklight pulseaudio wireless-network battery date openweathermap-simple
 
 fixed-center = false
 
@@ -127,9 +127,9 @@ date = %a %b %d
 time = %I:%M %p
 label = %date%  %time%
 
-[module/openweathermap-forecast]
+[module/openweathermap-simple]
 type = custom/script
-exec = ~/.config/polybar/polybar-scripts/openweathermap-forecast.sh
+exec = ~/.config/polybar/polybar-scripts/openweathermap-simple.sh
 interval = 600
 label-font = 3
 
