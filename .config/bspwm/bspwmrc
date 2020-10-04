@@ -11,10 +11,10 @@ greenclip daemon &
 fcitx5 &
 clash &
 aria2c --conf-path=/home/huizhi/.config/aria2/aria2.conf &
-nutstore &
 telegram-desktop &
 netease-cloud-music-gtk &
 mailspring &
+nutstore &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
