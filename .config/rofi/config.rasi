@@ -1,43 +1,38 @@
 * {
-  background-color: #ffffff;
-  border-color: #61707a;
-  text-color: #0b141a;
+  width: 520px;
   spacing: 0;
-  width: 512px;
-}
-
-inputbar {
-  border: 0 0 1px 0;
-  children: [prompt,entry];
-}
-
-prompt {
-  padding: 16px;
-  border: 0 1px 0 0;
-}
-
-textbox {
-  background-color: #ffffff;
-  border: 0 0 1px 0;
-  border-color: #61707a;
-  padding: 8px 16px;
-}
-
-entry {
-  padding: 16px;
+  font: "Sarasa Gothic SC 12";
+  background: #ffffff;
+  foreground: #e6e6e6;
+  text: #0b141a;
 }
 
 listview {
-  cycle: false;
-  margin: 0 0 -1px 0;
-  scrollbar: false;
+  background-color: @background;
+  border: 1;
+  border-color: @foreground;
+  padding: 0 13 0 13;
 }
 
 element {
-  border: 0 0 1px 0;
-  padding: 16px;
+  border:  0 0 1;
+  border-color: @foreground;
+  padding: 13;
 }
 
-element selected {
-  background-color: #e6e6e6;
+element.selected {
+  background-color: @foreground;
+}
+
+inputbar {
+  padding: 13;
+}
+
+prompt {
+  padding: 0 13 0 13;
+}
+
+element-icon {
+  size: 20px;
+  padding: 0 5;
 }
