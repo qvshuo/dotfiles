@@ -7,4 +7,4 @@ Arch Linux &amp; bspwm 配置文件。
 
 ![polybar & dunst](./Pictures/Screenshots/screenshot_dunst.png)
 
-![tilling](./Pictures/Screenshots/screenshot_tilling.png)
+![tilling](./Pictures/Screenshots/screenshot_tillin.png)
