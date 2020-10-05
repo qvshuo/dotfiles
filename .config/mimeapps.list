@@ -1,0 +1,12 @@
+[Default Applications]
+x-scheme-handler/mailspring=mailspring.desktop
+x-scheme-handler/baiduyunguanjia=baidunetdisk.desktop
+x-scheme-handler/mailto=mailspring.desktop
+
+[Added Associations]
+text/x-csrc=code-oss.desktop;
+application/x-shellscript=code-oss.desktop;
+application/x-trash=code-oss.desktop;
+image/png=org.nomacs.ImageLounge.desktop;org.gnome.eog.desktop;feh.desktop;
+image/jpeg=org.nomacs.ImageLounge.desktop;org.gnome.eog.desktop;feh.desktop;
+image/gif=firefox.desktop;org.nomacs.ImageLounge.desktop;
