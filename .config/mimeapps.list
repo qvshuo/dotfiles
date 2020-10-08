@@ -5,8 +5,12 @@ x-scheme-handler/mailto=mailspring.desktop
 
 [Added Associations]
 text/x-csrc=code-oss.desktop;
+text/plain=code-oss.desktop;
 application/x-shellscript=code-oss.desktop;
 application/x-trash=code-oss.desktop;
-image/png=org.nomacs.ImageLounge.desktop;org.gnome.eog.desktop;feh.desktop;
-image/jpeg=org.nomacs.ImageLounge.desktop;org.gnome.eog.desktop;feh.desktop;
-image/gif=firefox.desktop;org.nomacs.ImageLounge.desktop;
+application/x-executable=code-oss.desktop;
+application/octet-stream=code-oss.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=wps-office-wps.desktop;
+image/png=org.nomacs.ImageLounge.desktop;
+image/jpeg=org.nomacs.ImageLounge.desktop;
+image/gif=firefox.desktop;
