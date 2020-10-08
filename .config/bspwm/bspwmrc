@@ -1,16 +1,8 @@
 #! /bin/sh
 
 pgrep -x sxhkd > /dev/null || sxhkd &
-xsetroot -cursor_name left_ptr &
-picom &
 feh --bg-fill --randomize ~/Pictures/Background/* &
 $HOME/.config/polybar/launch.sh &
-redshift &
-dunst &
-greenclip daemon &
-fcitx5 &
-clash &
-aria2c --conf-path=/home/huizhi/.config/aria2/aria2.conf &
 telegram-desktop &
 netease-cloud-music-gtk &
 mailspring &
