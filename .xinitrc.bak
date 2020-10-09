@@ -56,5 +56,5 @@ dunst &
 greenclip daemon &
 clash &
 aria2c --conf-path=/home/huizhi/.config/aria2/aria2.conf &
-fcitx5 &
+ibus-daemon -x -d &
 exec bspwm
