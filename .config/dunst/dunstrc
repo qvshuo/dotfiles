@@ -175,7 +175,7 @@
     max_icon_size = 32
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/la-capitaine/status/scalable-light/:/usr/share/icons/la-capitaine/devices/scalable-light/
+    icon_path = /usr/share/icons/Qogir/32/status/:/usr/share/icons/Qogir/32/devices/
 
     ### History ###
 
