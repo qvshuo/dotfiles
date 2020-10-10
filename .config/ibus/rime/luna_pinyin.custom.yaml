@@ -26,5 +26,6 @@ patch:
       Control_R: noop
       Caps_Lock: noop
 
-# 导入搜狗细胞词库网络流行热词
-  translator/dictionary: luna_pinyin.sougou
+# 导入肥猫百万大词库
+  translator/dictionary: luna_pinyin.zhwiki
+
