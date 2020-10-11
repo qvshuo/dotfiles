@@ -28,4 +28,3 @@ patch:
 
 # 导入肥猫百万大词库
   translator/dictionary: luna_pinyin.zhwiki
-
