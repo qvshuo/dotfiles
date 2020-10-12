@@ -19,5 +19,4 @@ bspc config gapless_monocle        true
 bspc rule -a example desktop='^8' state=floating follow=on
 bspc rule -a TelegramDesktop desktop='^2'
 bspc rule -a Netease-cloud-music-gtk desktop='^10'
-bspc rule -a Mailspring desktop='^10'
 bspc rule -a File-roller state=floating
