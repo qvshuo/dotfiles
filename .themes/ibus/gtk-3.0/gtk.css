@@ -1,8 +1,5 @@
-.background {
+* {
   color: #0b141a; /* 字体颜色 */
   background-color: #ffffff; /* 背景颜色 */
-}
-
-* {
   -gtk-secondary-caret-color: #d4d4d4; /* 高亮背景颜色 */
 }
