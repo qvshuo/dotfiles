@@ -28,18 +28,3 @@ patch:
 
 # 导入肥猫百万大词库
   translator/dictionary: luna_pinyin.zhwiki
-
-# 文件名
-# luna_pinyin.zhwiki.dict.yaml
-
-# 将词库转化为繁体：
-# opencc -i input.txt -o output.txt
-
-# ---
-# name: luna_pinyin.zhwiki
-# version: "2020.10.01"
-# sort: by_weight
-# use_preset_vocabulary: true
-# import_tables:
-#   - luna_pinyin
-# ...

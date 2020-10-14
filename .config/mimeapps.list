@@ -14,3 +14,4 @@ application/vnd.openxmlformats-officedocument.wordprocessingml.document=wps-offi
 image/png=org.nomacs.ImageLounge.desktop;
 image/jpeg=org.nomacs.ImageLounge.desktop;
 image/gif=firefox.desktop;
+application/xml=code-oss.desktop;
