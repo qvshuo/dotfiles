@@ -5,6 +5,7 @@ feh --bg-fill --randomize ~/Pictures/Background/* &
 $HOME/.config/polybar/launch.sh &
 telegram-desktop &
 netease-cloud-music-gtk &
+mailspring &
 nutstore &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
@@ -20,3 +21,4 @@ bspc rule -a example desktop='^8' state=floating follow=on
 bspc rule -a TelegramDesktop desktop='^2'
 bspc rule -a Netease-cloud-music-gtk desktop='^10'
 bspc rule -a File-roller state=floating
+bspc rule -a Mailspring desktop='^10'
