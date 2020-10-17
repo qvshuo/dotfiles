@@ -59,7 +59,7 @@ type = internal/xwindow
 format = <label>
 format-padding = 4
 label = %title%
-label-maxlen = 45
+label-maxlen = 50
 
 [module/download]
 type = internal/network
