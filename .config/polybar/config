@@ -1,7 +1,7 @@
 [colors]
-background = #d8ffffff
-foreground = #0b141a
-foreground-alt = #61707a
+background = #26ffffff
+foreground = #ffffff
+foreground-alt = #7fffffff
 
 [bar/light]
 width = 100%
@@ -20,7 +20,7 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = Sarasa Gothic SC:size=11;2
+font-0 = Sarasa Gothic SC:weight=150:size=11;2
 font-1 = Font Awesome 5 Free Solid:style=Regular:size=10;1
 font-2 = Weather Icons:size=12;2
 
