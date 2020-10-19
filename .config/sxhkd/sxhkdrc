@@ -130,9 +130,9 @@ XF86AudioMute
 
 # brightness control
 XF86MonBrightnessDown
-	xbacklight -dec 10
+	light -U 10
 XF86MonBrightnessUp
-	xbacklight -inc 10
+	light -A 10
 
 # screenshot
 super + shift + @s
