@@ -6,5 +6,5 @@ dunst &
 greenclip daemon &
 clash &
 aria2c --conf-path=/home/huizhi/.config/aria2/aria2.conf &
-GTK_THEME=ibus ibus-daemon -dx &
+GTK_THEME=ibus-custom-theme ibus-daemon -dx &
 exec bspwm
