@@ -26,7 +26,7 @@ font-2 = Weather Icons:size=12;2
 
 modules-left = bspwm
 modules-center = xwindow
-modules-right = download upload cpu memory xbacklight pulseaudio wireless-network battery date openweathermap-simple
+modules-right = download upload cpu memory xbacklight pulseaudio wireless-network battery openweathermap-simple inbox-imap-python date
 
 fixed-center = false
 
@@ -120,18 +120,23 @@ label-full =  %percentage%%
 label-charging =  %percentage%%
 label-discharging =  %percentage%%
 
+[module/openweathermap-simple]
+type = custom/script
+exec = ~/.config/polybar/polybar-scripts/openweathermap-simple.sh
+interval = 600
+label-font = 3
+
+[module/inbox-imap-python]
+type = custom/script
+exec = ~/.config/polybar/polybar-scripts/inbox-imap-python.py
+interval = 60
+
 [module/date]
 type = internal/date
 interval = 1
 date = %a %b %d
 time = %I:%M %p
 label = %date%  %time%
-
-[module/openweathermap-simple]
-type = custom/script
-exec = ~/.config/polybar/polybar-scripts/openweathermap-simple.sh
-interval = 600
-label-font = 3
 
 [global/wm]
 margin-top = 0
