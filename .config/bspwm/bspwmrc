@@ -3,8 +3,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 feh --bg-fill --randomize ~/Pictures/Background/* &
 $HOME/.config/polybar/launch.sh &
-telegram-desktop &
-netease-cloud-music-gtk &
+
 nutstore &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
@@ -17,6 +16,3 @@ bspc config borderless_monocle     true
 bspc config gapless_monocle        true
 
 bspc rule -a example desktop='^8' state=floating follow=on
-bspc rule -a TelegramDesktop desktop='^2'
-bspc rule -a Netease-cloud-music-gtk desktop='^10'
-bspc rule -a File-roller state=floating
