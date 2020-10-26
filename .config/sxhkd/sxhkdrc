@@ -135,12 +135,12 @@ XF86MonBrightnessUp
 	light -A 10
 
 # screenshot
-super + shift + @s
-	scrot -s -e 'mv $f ~/Pictures/Screenshots/' && notify-send 'scrot' '区域截图已保存至~/Pictures/Screenshots/' --icon=dialog-information
-super + Print
-	scrot -e 'mv $f ~/Pictures/Screenshots/' && notify-send 'scrot' '全屏截图已保存至~/Pictures/Screenshots/' --icon=dialog-information
+Print
+	gnome-screenshot -f ~/Pictures/Screenshots/$DATE.png && notify-send 'gnome-screenshot' '全屏截图已保存至~/Pictures/Screenshots/' --icon=dialog-information &
 alt + Print
-	scrot -bs -e 'mv $f ~/Pictures/Screenshots/' && notify-send 'scrot' '窗口截图已保存至~/Pictures/Screenshots/' --icon=dialog-information
+	gnome-screenshot -w -f ~/Pictures/Screenshots/$DATE.png && notify-send 'gnome-screenshot' '窗口截图已保存至~/Pictures/Screenshots/' --icon=dialog-information &
+super + shift + @s
+	gnome-screenshot -a -f ~/Pictures/Screenshots/$DATE.png && notify-send 'gnome-screenshot' '区域截图已保存至~/Pictures/Screenshots/' --icon=dialog-information &
 
 # explorer
 super + e
@@ -148,8 +148,8 @@ super + e
 
 # clipboard
 super + v
-	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}' &
 
 # lockscreen
 super + x
-	export XSECURELOCK_COMPOSITE_OBSCURER=0 && xsecurelock
+	export XSECURELOCK_COMPOSITE_OBSCURER=0 && xsecurelock &

@@ -19,4 +19,7 @@ export EDITOR="$VISUAL"
 export TERM=alacritty
 
 export MOZ_X11_EGL=1
+
 export RANGER_LOAD_DEFAULT_RC=FALSE
+
+export DATE=$(date +%Y-%m-%d-%H:%M:%S)
