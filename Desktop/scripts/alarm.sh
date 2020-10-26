@@ -1,2 +1,2 @@
 #!/bin/bash
-mpv --loop Music/alarm.m4a &
+export DISPLAY=:0 && alacritty -e mpv --loop /media/Data/Music/alarm.m4a &

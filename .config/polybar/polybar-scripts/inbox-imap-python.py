@@ -2,9 +2,9 @@
 
 import imaplib
 
-email_address = ''
-password = ''
-imap_server = ''
+email_address = 'qvshuo@foxmail.com'
+password = 'hhbuejivisticgji'
+imap_server = 'imap.qq.com'
 
 obj = imaplib.IMAP4_SSL(imap_server, 993)
 obj.login(email_address, password)

@@ -144,8 +144,12 @@ alt + Print
 
 # explorer
 super + e
-	nautilus &
+	alacritty -e ranger &
 
 # clipboard
 super + v
 	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+
+# lockscreen
+super + x
+	export XSECURELOCK_COMPOSITE_OBSCURER=0 && xsecurelock

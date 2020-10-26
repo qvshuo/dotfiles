@@ -22,9 +22,10 @@ module-margin-right = 2
 
 font-0 = Sarasa Gothic SC:weight=150:size=11;2
 font-1 = Font Awesome 5 Free Solid:style=Regular:size=10;1
-font-2 = Weather Icons:size=12;2
+font-2 = Weather Icons:size=11;2
+font-3 = RobotoMono Nerd Font:style=Regular:size=14;2
 
-modules-left = bspwm
+modules-left = arch bspwm
 modules-center = xwindow
 modules-right = download upload cpu memory backlight pulseaudio wireless-network battery openweathermap-simple inbox-imap-python date
 
@@ -36,6 +37,11 @@ tray-padding = 2
 cursor-click = pointer
 
 wm-restack = bspwm
+
+[module/arch]
+type = custom/text
+content = 
+content-font = 4
 
 [module/bspwm]
 type = internal/bspwm
