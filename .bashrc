@@ -20,4 +20,3 @@ export TERM=alacritty
 
 export MOZ_X11_EGL=1
 export RANGER_LOAD_DEFAULT_RC=FALSE
-export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
