@@ -55,6 +55,7 @@ clash &
 dunst &
 greenclip daemon &
 GTK_THEME=ibus-custom-theme ibus-daemon -dx &
+nutstore &
 picom &
 redshift &
 udiskie &
