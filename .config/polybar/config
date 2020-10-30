@@ -103,7 +103,7 @@ use-ui-max = true
 interval = 5
 format-volume = <label-volume>
 label-volume =  %percentage%%
-label-muted =  muted
+label-muted =  Mute
 
 [module/wireless-network]
 type = internal/network
