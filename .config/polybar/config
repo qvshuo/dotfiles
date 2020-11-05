@@ -3,7 +3,7 @@ background = #26ffffff
 foreground = #ffffff
 foreground-alt = #7fffffff
 
-[bar/light]
+[bar/bsp]
 width = 100%
 height = 27
 
@@ -22,12 +22,12 @@ module-margin-right = 2
 
 font-0 = Sarasa Gothic SC:weight=150:size=11;2
 font-1 = Font Awesome 5 Free Solid:style=Regular:size=10;1
-font-2 = Weather Icons:size=11;2
+font-2 = Weather Icons:weight=250:size=11;2
 font-3 = RobotoMono Nerd Font:style=Regular:size=14;3
 
 modules-left = arch bspwm
-modules-center = date
-modules-right = download upload cpu memory backlight pulseaudio wireless-network battery openweathermap-simple inbox-imap-python
+modules-center = time
+modules-right = netspeed cpu memory backlight pulseaudio wifi battery openweathermap-simple inbox-imap-python
 
 fixed-center = true
 
@@ -60,17 +60,18 @@ label-empty = %index%
 label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 2
 
-[module/download]
+[module/time]
+type = internal/date
+interval = 1
+date = %a %b %d
+time = %I:%M %p
+label = %date%  %time%
+
+[module/netspeed]
 type = internal/network
 interface = wlan0
-label-connected =  %downspeed%
+label-connected =  %downspeed%   %upspeed%
 format-connected= <label-connected>
-
-[module/upload]
-type = internal/network
-interface =wlan0
-label-connected =  %upspeed%
-format-connected = <label-connected>
 
 [module/cpu]
 type = internal/cpu
@@ -96,16 +97,16 @@ use-ui-max = true
 interval = 5
 format-volume = <label-volume>
 label-volume =  %percentage%%
-label-muted =  Mute
+label-muted =  muted
 
-[module/wireless-network]
+[module/wifi]
 type = internal/network
 interface = wlan0
 interval = 2
 format-connected =  <label-connected>
 label-connected = %essid%
 format-disconnected =  <label-disconnected>
-label-disconnected = %ifname% disconnected
+label-disconnected = disconnected
 
 [module/battery]
 type = internal/battery
@@ -129,13 +130,6 @@ label-font = 3
 type = custom/script
 exec = ~/.config/polybar/polybar-scripts/inbox-imap-python.py
 interval = 60
-
-[module/date]
-type = internal/date
-interval = 1
-date = %a %b %d
-time = %I:%M %p
-label = %date%  %time%
 
 [global/wm]
 margin-top = 0
