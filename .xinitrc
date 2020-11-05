@@ -56,7 +56,7 @@ dunst &
 greenclip daemon &
 GTK_THEME=ibus-custom-theme ibus-daemon -dx &
 nutstore &
-picom &
+picom --experimental-backends &
 redshift &
 udiskie &
 xsetroot -cursor_name left_ptr &
