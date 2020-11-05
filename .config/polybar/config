@@ -5,7 +5,7 @@ foreground-alt = #7fffffff
 
 [bar/bsp]
 width = 100%
-height = 27
+height = 30
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -20,10 +20,10 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = Sarasa Gothic SC:weight=150:size=11;2
-font-1 = Font Awesome 5 Free Solid:style=Regular:size=10;1
-font-2 = Weather Icons:weight=250:size=11;2
-font-3 = RobotoMono Nerd Font:style=Regular:size=14;3
+font-0 = Sarasa Gothic SC:weight=150:size=11;3
+font-1 = Font Awesome 5 Free Solid:style=Regular:size=11;2
+font-2 = Weather Icons:weight=250:size=11;3
+font-3 = RobotoMono Nerd Font:style=Regular:size=14;4
 
 modules-left = arch bspwm
 modules-center = time
