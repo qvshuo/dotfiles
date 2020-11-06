@@ -1,7 +1,6 @@
 [colors]
 background = #26ffffff
 foreground = #ffffff
-foreground-alt = #7fffffff
 
 [bar/bsp]
 width = 100%
@@ -26,7 +25,7 @@ font-2 = Weather Icons:weight=250:size=11;3
 font-3 = RobotoMono Nerd Font:style=Regular:size=14;4
 
 modules-left = arch bspwm
-modules-center = time
+modules-center = date
 modules-right = netspeed cpu memory backlight pulseaudio wifi battery openweathermap-simple inbox-imap-python
 
 fixed-center = true
@@ -57,10 +56,10 @@ label-urgent = %index%!
 label-urgent-padding = 2
 
 label-empty = %index%
-label-empty-foreground = ${colors.foreground-alt}
+label-empty-foreground = #7fffffff
 label-empty-padding = 2
 
-[module/time]
+[module/date]
 type = internal/date
 interval = 1
 date = %a %b %d
