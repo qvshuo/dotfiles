@@ -120,6 +120,10 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
+#
+# hardware
+#
+
 # volume control
 XF86AudioRaiseVolume
 	amixer set Master 5%+ && notify-send 'Volume' '5% +'
@@ -134,6 +138,10 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
 	light -U 10 && notify-send 'Brightness' '10% -'
 
+#
+# software
+#
+
 # screenshot
 Print
 	import -window root png:- | xclip -selection clipboard -t image/png && notify-send 'Imagemagick' '全屏截图已复制至剪贴板' --icon=dialog-information &
@@ -143,8 +151,6 @@ super + shift + s
 	import png:- | xclip -selection clipboard -t image/png && notify-send 'Imagemagick' '截图已复制至剪贴板' --icon=dialog-information &
 super + alt + s
 	import ~/Pictures/Screenshots/$(date +%Y-%m-%d-%H-%M-%S).png && notify-send 'Imagemagick' '截图已保存至~/Pictures/Screenshots/' --icon=dialog-information &
-
-
 
 # explorer
 super + e

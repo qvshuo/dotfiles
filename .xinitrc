@@ -50,7 +50,6 @@ fi
 
 export LANG=zh_CN.UTF-8
 
-aria2c --conf-path=/home/huizhi/.config/aria2/aria2.conf &
 clash &
 dunst &
 greenclip daemon &
