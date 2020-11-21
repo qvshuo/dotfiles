@@ -154,7 +154,7 @@ super + alt + s
 
 # explorer
 super + e
-	alacritty -e ranger &
+	nautilus &
 
 # clipboard
 super + v
