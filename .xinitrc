@@ -52,11 +52,14 @@ export LANG=zh_CN.UTF-8
 
 clash &
 dunst &
+firefox &
 greenclip daemon &
 GTK_THEME=ibus-custom-theme ibus-daemon -dx &
+netease-cloud-music-gtk &
 nutstore &
 picom --experimental-backends &
 redshift &
+telegram-desktop &
 udiskie &
 xsetroot -cursor_name left_ptr &
 
