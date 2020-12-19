@@ -1,6 +1,5 @@
 [Desktop Entry]
-Type=Application
-Exec=sh -c "scrcpy -b 6M --window-title 'MEIZU 16s' --window-borderless --stay-awake --push-target /sdcard/scrcpy"
 Name=scrcpy-wechat
-Categories=Android;
+Exec=sh -c "scrcpy -b 6M --window-title 'MEIZU 16s' --window-borderless -Sw --push-target /sdcard/scrcpy"
 Icon=wechat
+Type=Application
