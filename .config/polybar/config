@@ -24,7 +24,7 @@ font-1 = Font Awesome 5 Free Solid:style=Regular:size=11;2
 font-2 = Weather Icons:weight=250:size=11;3
 font-3 = RobotoMono Nerd Font:style=Regular:size=14;4
 
-modules-left = arch bspwm
+modules-left = arch bspwm player-cmus
 modules-center = date
 modules-right = netspeed cpu memory backlight pulseaudio wifi battery openweathermap-simple inbox-imap-python
 
@@ -58,6 +58,11 @@ label-urgent-padding = 2
 label-empty = %index%
 label-empty-foreground = #7f61707a
 label-empty-padding = 2
+
+[module/player-cmus]
+type = custom/script
+exec = ~/.config/polybar/polybar-scripts/player-cmus.sh
+interval = 1
 
 [module/date]
 type = internal/date
