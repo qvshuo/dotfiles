@@ -143,11 +143,13 @@ type = custom/script
 exec = ~/.config/polybar/polybar-scripts/openweathermap-simple.sh
 interval = 600
 label-font = 3
+label-maxlen = 20
 
 [module/inbox-imap-python]
 type = custom/script
 exec = ~/.config/polybar/polybar-scripts/inbox-imap-python.py
 interval = 60
+label-maxlen = 20
 
 [global/wm]
 margin-top = 0
