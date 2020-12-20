@@ -63,6 +63,9 @@ label-empty-padding = 2
 type = custom/script
 exec = ~/.config/polybar/polybar-scripts/player-cmus.sh
 interval = 1
+click-left = cmus-remote -n &
+click-right = cmus-remote -r &
+click-middle = cmus-remote -u &
 
 [module/date]
 type = internal/date
