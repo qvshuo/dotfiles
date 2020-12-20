@@ -66,6 +66,7 @@ interval = 1
 click-left = cmus-remote -n &
 click-right = cmus-remote -r &
 click-middle = cmus-remote -u &
+label-maxlen = 65
 
 [module/date]
 type = internal/date
