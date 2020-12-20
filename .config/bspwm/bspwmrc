@@ -14,6 +14,5 @@ bspc config borderless_monocle     true
 bspc config gapless_monocle        true
 
 bspc rule -a example desktop='^8' state=floating follow=on
-bspc rule -a scrcpy desktop='^1' state=pseudo_tiled follow=on
+bspc rule -a scrcpy state=pseudo_tiled follow=on
 bspc rule -a TelegramDesktop desktop='^2' state=tiled follow=on
-bspc rule -a Netease-cloud-music-gtk desktop='^10' state=tiled follow=on

@@ -54,7 +54,6 @@ clash &
 dunst &
 greenclip daemon &
 GTK_THEME=ibus-custom-theme ibus-daemon -dx &
-netease-cloud-music-gtk &
 nutstore &
 picom --experimental-backends &
 redshift &
