@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=cmus
+Icon=/usr/share/icons/Qogir/scalable/apps/gnome-music.svg
+Exec=cmus %F
+Terminal=true
+Categories=AudioVideo;Player;
