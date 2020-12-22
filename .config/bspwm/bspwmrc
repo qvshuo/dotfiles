@@ -15,4 +15,4 @@ bspc config gapless_monocle        true
 
 bspc rule -a example desktop='^8' state=floating follow=on
 bspc rule -a scrcpy state=pseudo_tiled follow=on
-bspc rule -a TelegramDesktop desktop='^2' state=tiled follow=on
+bspc rule -a TelegramDesktop desktop='^2' follow=on
