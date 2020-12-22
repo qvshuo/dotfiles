@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=musicfox
+Icon=/usr/share/icons/Qogir/scalable/apps/netease-cloud-music.svg
+Exec=musicfox %F
+Terminal=true
+Categories=AudioVideo;Player;
