@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=scrcpy
-Exec=sh -c "scrcpy -b 6M --window-title 'MEIZU 16s' --window-borderless -w --push-target /sdcard/scrcpy"
+Exec=sh -c "scrcpy -b 6M --window-title 'MEIZU 16s' --window-borderless -Sw --push-target /sdcard/scrcpy"
 Icon=phone
 Type=Application
