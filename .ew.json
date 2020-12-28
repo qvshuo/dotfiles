@@ -12,7 +12,7 @@
   "proxy": "off",
   "proxy-url": "socks5://127.0.0.1:1080",
   "chat-area-offset-y": "0",
-  "blur": "on",
+  "blur": "off",
   "css": "on",
   "css-content": "",
   "zoom": 1,
