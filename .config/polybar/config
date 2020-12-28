@@ -1,6 +1,6 @@
 [colors]
 background = #ceffffff
-foreground = #617071
+foreground = #61707a
 
 [bar/bsp]
 width = 100%
