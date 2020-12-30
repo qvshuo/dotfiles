@@ -18,4 +18,3 @@ bspc rule -a electronic-wechat state=pseudo_tiled follow=on
 bspc rule -a scrcpy state=pseudo_tiled follow=on
 bspc rule -a TelegramDesktop desktop='^2' follow=on
 bspc rule -a thunder state=pseudo_tiled follow=on
-bspc rule -a app-nativefier-4418c7 state=pseudo_tiled follow=on
