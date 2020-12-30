@@ -126,17 +126,17 @@ super + {Left,Down,Up,Right}
 
 # volume control
 XF86AudioRaiseVolume
-	amixer set Master 5%+ && notify-send 'Volume' '5% +'
+	amixer set Master 5%+
 XF86AudioLowerVolume
-	amixer set Master 5%- && notify-send 'Volume' '5% -'
+	amixer set Master 5%-
 XF86AudioMute
-	amixer -D pulse set Master 1+ toggle && notify-send 'Volume' 'Mute'
+	amixer -D pulse set Master 1+ toggle
 
 # brightness control
 XF86MonBrightnessUp
-	light -A 10 && notify-send 'Brightness' '10% +'
+	light -A 5
 XF86MonBrightnessDown
-	light -U 10 && notify-send 'Brightness' '10% -'
+	light -U 5
 
 #
 # software
