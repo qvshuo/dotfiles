@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=微信
-Comment=wechat-uos
-Exec=/usr/bin/wechat-uos
-Icon=wechat
-Categories=Network;InstantMessaging;Application;
-Terminal=false
-StartupNotify=true
