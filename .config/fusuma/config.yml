@@ -9,6 +9,8 @@ swipe:
       command: "bspc desktop -f next.local"
     right:
       command: "bspc desktop -f prev.local"
+    down:
+      command: "bspc desktop -f last"
 
 pinch:
   4: 
