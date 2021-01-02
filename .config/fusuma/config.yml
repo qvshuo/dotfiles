@@ -13,6 +13,8 @@ swipe:
       command: "bspc desktop -f next.local"
     right:
       command: "bspc desktop -f prev.local"
+    up:
+      command: "bspc desktop -f '^1'"
     down:
       command: "bspc desktop -f last"
 
