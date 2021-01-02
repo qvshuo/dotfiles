@@ -1,3 +1,6 @@
+shell:
+  program: /bin/fish
+
 # Background Opacity
 background_opacity: 0.95
 
