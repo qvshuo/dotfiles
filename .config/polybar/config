@@ -26,9 +26,9 @@ module-margin-right = 2
 
 font-0 = 更纱黑体 SC:style=Regular:size=12;3
 
-modules-left = wlan player-cmus
+modules-left = openweathermap-mini inbox-imap-python wlan player-cmus
 modules-center = time bspwm
-modules-right = cpu memory backlight pulseaudio battery openweathermap-mini inbox-imap-python
+modules-right = cpu memory backlight pulseaudio battery
 
 tray-position = right
 tray-maxsize = 18
@@ -38,6 +38,23 @@ wm-restack = bspwm
 
 cursor-click = pointer
 cursor-scroll = ns-resize
+
+
+[module/openweathermap-mini]
+type = custom/script
+exec = ~/.config/polybar/polybar-scripts/openweathermap-mini.sh
+interval = 600
+label-font = 3
+label-maxlen = 20
+label-underline = ${colors.purple}
+
+
+[module/inbox-imap-python]
+type = custom/script
+exec = ~/.config/polybar/polybar-scripts/inbox-imap-python.py
+interval = 60
+label-maxlen = 20
+label-underline = ${colors.pink}
 
 
 [module/wlan]
@@ -117,7 +134,7 @@ label-underline = ${colors.pink}
 type = internal/pulseaudio
 use-ui-max = true
 interval = 5
-label-volume = Au: %percentage%
+label-volume = Vo: %percentage%
 label-volume-underline = ${colors.purple}
 label-muted = Au: uted
 label-muted-underline = ${colors.purple}
@@ -136,22 +153,6 @@ label-charging = Ba: %percentage%
 label-charging-underline = ${colors.blue}
 label-discharging = Ba: %percentage%
 label-discharging-underline = ${colors.blue}
-
-
-[module/openweathermap-mini]
-type = custom/script
-exec = ~/.config/polybar/polybar-scripts/openweathermap-mini.sh
-interval = 600
-label-font = 3
-label-maxlen = 20
-label-underline = ${colors.purple}
-
-[module/inbox-imap-python]
-type = custom/script
-exec = ~/.config/polybar/polybar-scripts/inbox-imap-python.py
-interval = 60
-label-maxlen = 20
-label-underline = ${colors.pink}
 
 
 [global/wm]
