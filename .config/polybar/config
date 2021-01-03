@@ -3,7 +3,10 @@ white = #ceffffff
 black_0 = #0b141a
 black_1 = #61707a
 black_2 = #7f61707a
-
+blue = #a8d8ea
+purple  = #aa96da
+pink = #fcbad3
+yellow = #ffffd2
 
 [bar/bsp]
 fixed-center = true
@@ -45,6 +48,7 @@ time = %I:%M %p
 time-alt = %a %d %b
 label = %time%
 label-foreground = ${colors.black_0}
+label-underline = ${colors.blue}
 
 
 [module/wlan]
@@ -52,8 +56,10 @@ type = internal/network
 interface = wlan0
 interval = 2
 label-connected = D: %downspeed%   U: %upspeed%
+label-connected-underline = ${colors.purple}
 label-disconnected = D/C.
 label-disconnected-foreground = ${colors.black_2}
+label-disconnected-underline = ${colors.purple}
 
 
 [module/player-cmus]
@@ -90,24 +96,33 @@ label-empty-padding = 2
 type = internal/cpu
 interval = 2
 label = CPU: %percentage%%
+label-underline = ${colors.pink}
+
 
 [module/memory]
 type = internal/memory
 interval = 2
 label = MEM: %gb_used%
+label-underline = ${colors.yellow}
+
 
 [module/backlight]
 type = internal/backlight
 card = intel_backlight
 enable-scroll = true
 label = Br: %percentage%
+label-underline = ${colors.pink}
+
 
 [module/pulseaudio]
 type = internal/pulseaudio
 use-ui-max = true
 interval = 5
 label-volume = Au: %percentage%
+label-volume-underline = ${colors.purple}
 label-muted = Au: uted
+label-muted-underline = ${colors.purple}
+
 
 [module/battery]
 type = internal/battery
@@ -117,8 +132,12 @@ full-at = 99
 poll-interval = 5
 
 label-full = Ba: %percentage%
+label-full-underline = ${colors.blue}
 label-charging = Ba: %percentage%
+label-charging-underline = ${colors.blue}
 label-discharging = Ba: %percentage%
+label-discharging-underline = ${colors.blue}
+
 
 [module/openweathermap-mini]
 type = custom/script
@@ -126,12 +145,14 @@ exec = ~/.config/polybar/polybar-scripts/openweathermap-mini.sh
 interval = 600
 label-font = 3
 label-maxlen = 20
+label-underline = ${colors.purple}
 
 [module/inbox-imap-python]
 type = custom/script
 exec = ~/.config/polybar/polybar-scripts/inbox-imap-python.py
 interval = 60
 label-maxlen = 20
+label-underline = ${colors.pink}
 
 
 [global/wm]
