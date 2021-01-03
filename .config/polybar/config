@@ -84,7 +84,7 @@ label-focused-underline = ${colors.black_0}
 label-occupied = ●
 label-occupied-padding = 2
 
-label-urgent = ○!
+label-urgent = ●!
 label-urgent-padding = 2
 
 label-empty = ○
