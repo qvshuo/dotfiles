@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=wechat-nativefier
-Comment=wechat-nativefier
-Exec=/home/huizhi/Desktop/wechat-nativefier/APP-linux-x64/APP
-Icon=wechat
-Categories=Network;InstantMessaging;Application;
-Terminal=false
-StartupNotify=true
