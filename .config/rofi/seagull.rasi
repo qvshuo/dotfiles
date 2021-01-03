@@ -1,0 +1,39 @@
+* {
+  width: 520px; 
+  spacing: 0;
+  background: #ffffff;
+  foreground: #e6e6e6;
+  text: #0b141a;
+}
+
+listview {
+  background-color: @background;
+  border-color: @foreground;
+  padding: 0 13 0 13;
+}
+
+element {
+  border:  0 0 1;
+  border-color: @foreground;
+  padding: 13;
+  text-color: @text;
+}
+
+element-icon {
+  size: 20px;
+  padding: 0 5;
+}
+element.selected {
+  background-color: @foreground;
+}
+
+inputbar {
+  padding: 13;
+  border: 0 0 1;
+  border-color: @foreground;
+}
+
+prompt {
+  padding: 0 13 0 13;
+  text-color: @text;
+}
