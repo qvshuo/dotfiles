@@ -1,6 +1,5 @@
 [colors]
 white = #ceffffff
-black_0 = #0b141a
 black_1 = #61707a
 black_2 = #7f61707a
 blue = #a8d8ea
@@ -78,11 +77,11 @@ enable-scroll = false
 
 label-focused = ●
 label-focused-padding = 2
-label-focused-foreground = ${colors.black_0}
-label-focused-underline = ${colors.black_0}
+label-focused-underline = ${colors.black_1}
 
 label-occupied = ●
 label-occupied-padding = 2
+label-occupied-foreground = ${colors.black_2}
 
 label-urgent = ●!
 label-urgent-padding = 2
