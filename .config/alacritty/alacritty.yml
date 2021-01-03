@@ -1,36 +1,32 @@
-shell:
-  program: /bin/fish
+env:
+  TERM: alacritty
 
-# Background Opacity
-background_opacity: 0.95
-
-# Padding
 window:
   padding:
     x: 10
     y: 10
 
-# Font configuration (changes require restart)
+  dynamic_padding: true
+  decorations: none
+
 font:
-  # The size to use.
-  size: 12
-  # The normal (roman) font face to use.
   normal:
     family: Sarasa Mono SC
-    # Style can be specified to pick a specific face.
     style: Regular
 
-  # The bold font face
   bold:
-    family:  Sarasa Mono SC
-    # Style can be specified to pick a specific face.
+    family: Sarasa Mono SC
     style: Bold
 
-  # The italic font face
   italic:
-    family:  Sarasa Mono SC
-    # Style can be specified to pick a specific face.
+    family: Sarasa Mono SC
     style: Italic
+
+  bold_italic:
+    family: Sarasa Mono SC
+    style: Bold Italic
+
+  size: 12.0
 
 # Colors (Seagull)
 colors:
@@ -39,7 +35,7 @@ colors:
     background: '#ffffff'
     foreground: '#61707a'
 
-  # Normal colors
+  # Default colors
   normal:
     black:   '#0b141a'
     red:     '#ff4053'
@@ -60,3 +56,21 @@ colors:
     magenta: '#9854ff'
     cyan:    '#00a5ab'
     white:   '#ffffff'
+
+background_opacity: 0.95
+
+selection:
+  save_to_clipboard: true
+
+cursor:
+    style: Beam
+    thickness: 0.25
+
+live_config_reload: true
+
+shell:
+  program: /bin/fish
+
+mouse:
+  hide_when_typing: true
+
