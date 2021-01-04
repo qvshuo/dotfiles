@@ -1,7 +1,7 @@
 [colors]
 white = #ceffffff
-black_1 = #61707a
-black_2 = #7f61707a
+black = #61707a
+gray = #7f61707a
 blue = #a8d8ea
 purple  = #aa96da
 pink = #fcbad3
@@ -14,7 +14,7 @@ width = 100%
 height = 35
 
 background = ${colors.white}
-foreground = ${colors.black_1}
+foreground = ${colors.black}
 
 line-size = 4
 
@@ -28,7 +28,7 @@ font-0 = 更纱黑体 SC:style=Regular:size=12;3
 
 modules-left = openweathermap-mini inbox-imap-python wlan player-cmus
 modules-center = time bspwm
-modules-right = cpu memory backlight pulseaudio battery
+modules-right = backlight pulseaudio cpu memory battery
 
 tray-position = right
 tray-maxsize = 18
@@ -44,9 +44,8 @@ cursor-scroll = ns-resize
 type = custom/script
 exec = ~/.config/polybar/polybar-scripts/openweathermap-mini.sh
 interval = 600
-label-font = 3
 label-maxlen = 20
-label-underline = ${colors.purple}
+label-underline = ${colors.blue}
 
 
 [module/inbox-imap-python]
@@ -54,18 +53,24 @@ type = custom/script
 exec = ~/.config/polybar/polybar-scripts/inbox-imap-python.py
 interval = 60
 label-maxlen = 20
-label-underline = ${colors.pink}
+label-underline = ${colors.purple}
 
 
 [module/wlan]
 type = internal/network
 interface = wlan0
 interval = 2
+accumulate-stats = true
+
+format-connected = <label-connected>
+format-disconnected = <label-disconnected>
+
 label-connected = D: %downspeed%   U: %upspeed%
-label-connected-underline = ${colors.purple}
-label-disconnected = D/C.
-label-disconnected-foreground = ${colors.black_2}
-label-disconnected-underline = ${colors.purple}
+label-connected-underline = ${colors.pink}
+
+label-disconnected = Disconnected.
+label-disconnected-foreground = ${colors.gray}
+label-disconnected-underline = ${colors.pink}
 
 
 [module/player-cmus]
@@ -81,63 +86,88 @@ label-maxlen = 50
 [module/time]
 type = internal/date
 interval = 1
+
 time = %I:%M %p
 time-alt = %a %d %b
+
+format = <label>
+
 label = %time%
-label-foreground = ${colors.black_0}
-label-underline = ${colors.blue}
+label-foreground = ${colors.black}
+label-underline = ${colors.yellow}
 
 
 [module/bspwm]
 type = internal/bspwm
 enable-scroll = false
 
+format =  <label-state>
+
 label-focused = ●
 label-focused-padding = 2
-label-focused-underline = ${colors.black_1}
+label-focused-underline = ${colors.black}
 
 label-occupied = ●
 label-occupied-padding = 2
-label-occupied-foreground = ${colors.black_2}
+label-occupied-foreground = ${colors.gray}
 
 label-urgent = ●!
 label-urgent-padding = 2
 
 label-empty = ○
-label-empty-foreground = ${colors.black_2}
+label-empty-foreground = ${colors.gray}
 label-empty-padding = 2
-
-
-[module/cpu]
-type = internal/cpu
-interval = 2
-label = CPU: %percentage%%
-label-underline = ${colors.pink}
-
-
-[module/memory]
-type = internal/memory
-interval = 2
-label = MEM: %gb_used%
-label-underline = ${colors.yellow}
 
 
 [module/backlight]
 type = internal/backlight
 card = intel_backlight
 enable-scroll = true
-label = Br: %percentage%
-label-underline = ${colors.pink}
+
+format = <bar>
+
+bar-width = 10
+bar-indicator = ○
+bar-fill = -
+bar-empty = -
 
 
 [module/pulseaudio]
 type = internal/pulseaudio
+sink = alsa_output.pci-0000_00_1f.3.analog-stereo
 use-ui-max = true
 interval = 5
-label-volume = Vo: %percentage%
-label-volume-underline = ${colors.purple}
-label-muted = Au: uted
-label-muted-underline = ${colors.purple}
+
+format-volume = <bar-volume>
+
+bar-volume-width = 10
+bar-volume-indicator = ○
+bar-volume-fill = -
+bar-volume-empty = -
+
+format-muted = <label-muted>
+
+label-muted = ----------
+
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+
+format = <label>
+
+label = CPU: %percentage%%
+label-underline = ${colors.blue}
+
+
+[module/memory]
+type = internal/memory
+interval = 2
+
+format = <label>
+
+label = MEM: %gb_used%
+label-underline = ${colors.purple}
 
 
 [module/battery]
@@ -147,12 +177,15 @@ adapter = ACAD
 full-at = 99
 poll-interval = 5
 
-label-full = Ba: %percentage%
-label-full-underline = ${colors.blue}
-label-charging = Ba: %percentage%
-label-charging-underline = ${colors.blue}
-label-discharging = Ba: %percentage%
-label-discharging-underline = ${colors.blue}
+format-full = <label-full>
+format-charging = <label-charging>
+format-discharging = <label-discharging>
+
+label-full = ""
+label-charging = B: %percentage%%
+label-charging-underline = ${colors.pink}
+label-discharging = B: %percentage%%
+label-discharging-underline = ${colors.pink}
 
 
 [global/wm]
