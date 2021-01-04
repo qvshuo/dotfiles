@@ -4,7 +4,6 @@ xrdb -merge ~/.Xresources
 
 export LANG=zh_CN.UTF-8
 
-clash &
 dunst &
 fusuma -d &
 greenclip daemon &
