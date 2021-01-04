@@ -63,7 +63,7 @@ selection:
   save_to_clipboard: true
 
 cursor:
-    style: Beam
+    style: Underline
     thickness: 0.25
 
 live_config_reload: true
