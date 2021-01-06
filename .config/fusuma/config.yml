@@ -4,10 +4,6 @@ swipe:
       command: "bspc node -f prev.local.!hidden.window"
     right:
       command: "bspc node -f next.local.!hidden.window"
-    up:
-      command: "hsetroot -fill $(find ~/Pictures/Background -type f | shuf -n 1) &"
-    down:
-      command: "hsetroot -tile $(find ~/Pictures/limboPro.xyz -type f | shuf -n 1) &"
   4:
     left:
       command: "bspc desktop -f next.local"

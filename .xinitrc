@@ -8,7 +8,6 @@ dunst &
 fusuma -d &
 greenclip daemon &
 GTK_THEME=ibus-custom-theme ibus-daemon -drx &
-hsetroot -tile $(find ~/Pictures/limboPro.xyz -type f | shuf -n 1) &
 nutstore &
 picom --experimental-backends &
 redshift &
@@ -17,5 +16,6 @@ telegram-desktop &
 udiskie &
 xsetroot -cursor_name left_ptr &
 ~/.config/polybar/launch.sh &
+~/Desktop/dynamic_wallpaper/your_name/your_name.sh &
 
 exec bspwm
