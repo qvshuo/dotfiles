@@ -7,6 +7,7 @@ window:
     y: 10
 
   dynamic_padding: true
+
   decorations: none
 
 font:

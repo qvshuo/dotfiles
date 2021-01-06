@@ -1,7 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=musicfox
-Comment=netease-music
 Icon=netease-cloud-music
 Exec=alacritty --class musicfox,musicfox -e musicfox
 Categories=AudioVideo;Player;

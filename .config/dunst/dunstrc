@@ -38,7 +38,7 @@
     icon_position = left
     min_icon_size = 0
     max_icon_size = 32
-    icon_path = /usr/share/icons/Qogir/32/status/:/usr/share/icons/Qogir/32/devices/
+    icon_path = /usr/share/icons/Qogir/32/apps/:/usr/share/icons/Qogir/32/status/:/usr/share/icons/Qogir/32/devices/
 
     ### History ###
 

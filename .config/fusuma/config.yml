@@ -18,16 +18,5 @@ swipe:
     down:
       command: "bspc desktop -f last"
 
-pinch:
-  4: 
-    in:
-      command: ""
-    out:
-      command: ""
-
-threshold:
-  pinch: 0.5
-
 interval:
   swipe: 0.75
-  pinch: 0.5

@@ -1,9 +1,5 @@
 #! /bin/sh
 
-pgrep -x sxhkd > /dev/null || sxhkd &
-nitrogen --restore &
-$HOME/.config/polybar/launch.sh &
-
 bspc monitor -d I II III IV V VI VII VIII IX X
 
 bspc config border_width           0
@@ -15,7 +11,6 @@ bspc config gapless_monocle        true
 
 bspc rule -a cmus state=pseudo_tiled rectangle=900x700+0+0 follow=on
 bspc rule -a baidunetdisk state=pseudo_tiled follow=on
-bspc rule -a electronic-wechat state=pseudo_tiled follow=on
 bspc rule -a mpv state=pseudo_tiled follow=on
 bspc rule -a musicfox state=pseudo_tiled rectangle=900x700+0+0 follow=on
 bspc rule -a scrcpy state=pseudo_tiled follow=on
