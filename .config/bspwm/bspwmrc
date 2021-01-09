@@ -11,7 +11,6 @@ bspc config gapless_monocle        true
 
 bspc rule -a cmus state=pseudo_tiled rectangle=900x700+0+0 follow=on
 bspc rule -a baidunetdisk state=pseudo_tiled follow=on
-bspc rule -a mpv state=pseudo_tiled follow=on
 bspc rule -a musicfox state=pseudo_tiled rectangle=900x700+0+0 follow=on
 bspc rule -a scrcpy state=pseudo_tiled follow=on
 bspc rule -a TelegramDesktop desktop='^2' follow=on
