@@ -12,7 +12,6 @@ nutstore &
 picom --experimental-backends &
 redshift &
 sxhkd &
-telegram-desktop &
 udiskie &
 xsetroot -cursor_name left_ptr &
 ~/.config/polybar/launch.sh &

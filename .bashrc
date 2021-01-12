@@ -5,13 +5,17 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+PS1="[\t] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;2m\]\\$\[$(tput sgr0)\] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;4m\]\W\[$(tput sgr0)\] \[$(tput sgr0)\]"
 
-PS1='[\u@\h \W]\$ '
+alias ls='ls --color=auto'
+alias la='ls -al --color=auto'
+alias vim='nvim'
+alias ..='cd ..'
 
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
+

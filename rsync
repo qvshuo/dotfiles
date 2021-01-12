@@ -1,0 +1,3 @@
+#! /bin/bash
+
+rsync -r --exclude ".git/" --exclude "LICENSE" --exclude "README.md" --exclude "rsync" ~/dotfiles/ ~/

@@ -69,8 +69,8 @@ cursor:
 
 live_config_reload: true
 
-shell:
-  program: /bin/fish
+# shell:
+#   program: /bin/fish
 
 mouse:
   hide_when_typing: true
