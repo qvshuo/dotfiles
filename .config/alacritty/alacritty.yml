@@ -64,13 +64,13 @@ selection:
   save_to_clipboard: true
 
 cursor:
-    style: Underline
-    thickness: 0.25
+  style: Underline
+  thickness: 0.25
 
 live_config_reload: true
 
-# shell:
-#   program: /bin/fish
+shell:
+  program: /bin/fish
 
 mouse:
   hide_when_typing: true
