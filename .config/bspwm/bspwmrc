@@ -9,8 +9,8 @@ bspc config split_ratio            0.5
 bspc config borderless_monocle     true
 bspc config gapless_monocle        true
 
-bspc rule -a Gnome-music state=pseudo_tiled follow=on
 bspc rule -a baidunetdisk state=pseudo_tiled follow=on
+bspc rule -a Gnome-music state=pseudo_tiled follow=on
 bspc rule -a Netease-cloud-music-gtk state=pseudo_tiled follow=on
 bspc rule -a scrcpy state=pseudo_tiled follow=on
 bspc rule -a TelegramDesktop desktop='^2' follow=on
