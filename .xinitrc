@@ -7,7 +7,7 @@ export LANG=zh_CN.UTF-8
 dunst &
 fusuma -d &
 greenclip daemon &
-GTK_THEME=ibus-custom-theme ibus-daemon -drx &
+ibus-daemon -drx &
 nutstore &
 picom --experimental-backends &
 redshift &
