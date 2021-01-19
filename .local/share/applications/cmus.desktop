@@ -1,6 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=cmus
-Icon=gnome-music
-Exec=alacritty --class cmus,cmus -e cmus
-Categories=AudioVideo;Player;

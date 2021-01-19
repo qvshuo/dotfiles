@@ -1,8 +1,11 @@
 [Desktop Entry]
+Type=Application
 Name=wechat-nativefier
+Name[zh_CN]=微信-nativefier
 Comment=微信网页版
 Exec=/home/huizhi/Desktop/wechat-nativefier-linux-x64/wechat-nativefier %U
 Icon=wechat
 Type=Application
 StartupNotify=true
-Categories=Application;chat;
+Categories=Chat;Network;
+Keywords=chat;im;messaging;messenger;
