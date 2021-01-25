@@ -21,7 +21,7 @@
 
     font = Sarasa Gothic SC 10
     line_height = 10
-    markup = no
+    markup = full
     format = "<b>%s</b>\n%b"
     alignment = left
     vertical_alignment = center
