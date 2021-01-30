@@ -11,5 +11,6 @@ bspc config gapless_monocle        true
 
 bspc rule -a scrcpy state=pseudo_tiled follow=on
 bspc rule -a thunder state=pseudo_tiled follow=on
+bspc rule -a TelegramDesktop state=pseudo_tiled rectangle=1536x864+0+0 follow=on
 bspc rule -a wechat-nativefier-4418c7 state=pseudo_tiled rectangle=1280x800+0+0 follow=on
 bspc rule -a YesPlayMusic state=pseudo_tiled rectangle=1536x864+0+0 follow=on
