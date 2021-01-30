@@ -3,6 +3,7 @@
 xrdb -merge ~/.Xresources
 
 export LANG=zh_CN.UTF-8
+export QT_SCALE_FACTOR=1.25
 
 clash &
 dunst &
