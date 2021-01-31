@@ -17,6 +17,6 @@ sxhkd &
 udiskie &
 xsetroot -cursor_name left_ptr &
 ~/.config/polybar/launch.sh &
-~/Desktop/dynamic_wallpaper/your_name/your_name.sh &
+~/Desktop/dynamic_wallpaper/run.sh &
 
 exec bspwm
