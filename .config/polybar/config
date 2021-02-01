@@ -1,11 +1,7 @@
 [colors]
-white = #c0ffffff
-black = #61707a
-gray = #8061707a
-blue = #a8d8ea
-purple  = #aa96da
-pink = #fcbad3
-yellow = #ffffd2
+transparency = #00000000
+white = #ffffff
+white-alt = #80ffffff
 
 [bar/bsp]
 fixed-center = true
@@ -13,10 +9,8 @@ fixed-center = true
 width = 100%
 height = 35
 
-background = ${colors.white}
-foreground = ${colors.black}
-
-line-size = 4
+background = ${colors.transparency}
+foreground = ${colors.white}
 
 padding-left = 3
 padding-right = 3
@@ -24,7 +18,7 @@ padding-right = 3
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = 更纱黑体 SC:style=Regular:size=12;3
+font-0 = "Sarasa Gothic SC:style=Regular:size=12;3"
 
 modules-left = battery cpu memory backlight pulseaudio
 modules-center = time bspwm
@@ -53,9 +47,7 @@ format-discharging = <label-discharging>
 
 label-full = ""
 label-charging = B: %percentage%%
-label-charging-underline = ${colors.pink}
 label-discharging = B: %percentage%%
-label-discharging-underline = ${colors.pink}
 
 
 [module/cpu]
@@ -63,9 +55,7 @@ type = internal/cpu
 interval = 2
 
 format = <label>
-
 label = CPU: %percentage%%
-label-underline = ${colors.blue}
 
 
 [module/memory]
@@ -73,9 +63,7 @@ type = internal/memory
 interval = 2
 
 format = <label>
-
 label = MEM: %gb_used%
-label-underline = ${colors.purple}
 
 
 [module/backlight]
@@ -105,7 +93,6 @@ bar-volume-fill = -
 bar-volume-empty = -
 
 format-muted = <label-muted>
-
 label-muted = ----------
 
 
@@ -117,10 +104,7 @@ time = %I:%M %p
 time-alt =  %Y-%m-%d %A
 
 format = <label>
-
 label = %time%
-label-foreground = ${colors.black}
-label-underline = ${colors.yellow}
 
 
 [module/bspwm]
@@ -131,17 +115,16 @@ format =  <label-state>
 
 label-focused = ●
 label-focused-padding = 2
-label-focused-underline = ${colors.black}
 
 label-occupied = ●
 label-occupied-padding = 2
-label-occupied-foreground = ${colors.gray}
+label-occupied-foreground = ${colors.white-alt}
 
 label-urgent = ●!
 label-urgent-padding = 2
 
 label-empty = ○
-label-empty-foreground = ${colors.gray}
+label-empty-foreground = ${colors.white-alt}
 label-empty-padding = 2
 
 
@@ -155,11 +138,8 @@ format-connected = <label-connected>
 format-disconnected = <label-disconnected>
 
 label-connected = D: %downspeed%   U: %upspeed%
-label-connected-underline = ${colors.pink}
-
-label-disconnected = Disconnected.
-label-disconnected-foreground = ${colors.gray}
-label-disconnected-underline = ${colors.pink}
+label-disconnected = Disconnected
+label-disconnected-foreground = ${colors.white-alt}
 
 
 [module/openweathermap-mini]
@@ -167,7 +147,6 @@ type = custom/script
 exec = ~/.config/polybar/polybar-scripts/openweathermap-mini.sh
 interval = 600
 label-maxlen = 20
-label-underline = ${colors.blue}
 
 
 [module/inbox-imap-python]
@@ -175,11 +154,13 @@ type = custom/script
 exec = ~/.config/polybar/polybar-scripts/inbox-imap-python.py
 interval = 60
 label-maxlen = 20
-label-underline = ${colors.purple}
 
 
 [global/wm]
 margin-top = 0
 margin-bottom = 0
+
+[settings]
+pseudo-transparency = true
 
 ; vim:ft=dosini
