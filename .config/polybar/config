@@ -7,7 +7,7 @@ white-alt = #80ffffff
 fixed-center = true
 
 width = 100%
-height = 35
+height = 30
 
 background = ${colors.transparency}
 foreground = ${colors.white}
@@ -18,9 +18,9 @@ padding-right = 3
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = "Sarasa Gothic SC:style=Regular:size=12;3"
+font-0 = "Terminus:style=Bold:size=16;3"
 
-modules-left = battery cpu memory backlight pulseaudio
+modules-left = battery cpu memory pulseaudio
 modules-center = time bspwm
 modules-right = wlan openweathermap-mini inbox-imap-python
 
@@ -66,34 +66,19 @@ format = <label>
 label = MEM: %gb_used%
 
 
-[module/backlight]
-type = internal/backlight
-card = intel_backlight
-enable-scroll = true
-
-format = <bar>
-
-bar-width = 10
-bar-indicator = ○
-bar-fill = -
-bar-empty = -
-
-
 [module/pulseaudio]
 type = internal/pulseaudio
 sink = alsa_output.pci-0000_00_1f.3.analog-stereo
 use-ui-max = true
 interval = 5
 
-format-volume = <bar-volume>
+format-volume = <label-volume>
 
-bar-volume-width = 10
-bar-volume-indicator = ○
-bar-volume-fill = -
-bar-volume-empty = -
+label-volume = Vol: %percentage%%
 
 format-muted = <label-muted>
-label-muted = ----------
+label-muted = muted
+label-muted-foreground = ${colors.white-alt}
 
 
 [module/time]
@@ -113,17 +98,17 @@ enable-scroll = false
 
 format =  <label-state>
 
-label-focused = ●
+label-focused = #
 label-focused-padding = 2
 
-label-occupied = ●
+label-occupied = #
 label-occupied-padding = 2
 label-occupied-foreground = ${colors.white-alt}
 
-label-urgent = ●!
+label-urgent = #!
 label-urgent-padding = 2
 
-label-empty = ○
+label-empty = -
 label-empty-foreground = ${colors.white-alt}
 label-empty-padding = 2
 

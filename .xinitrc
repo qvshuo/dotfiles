@@ -14,8 +14,11 @@ nutstore &
 picom --experimental-backends &
 redshift &
 sxhkd &
+telegram-desktop &
 udiskie &
+WeChat &
 xsetroot -cursor_name left_ptr &
+yesplaymusic &
 ~/.config/polybar/launch.sh &
 ~/Desktop/dynamic_wallpaper/run.sh &
 
