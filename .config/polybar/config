@@ -144,7 +144,4 @@ label-maxlen = 20
 margin-top = 0
 margin-bottom = 0
 
-[settings]
-pseudo-transparency = true
-
 ; vim:ft=dosini
