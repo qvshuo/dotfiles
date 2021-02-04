@@ -25,7 +25,6 @@ modules-center = time bspwm
 modules-right = wlan openweathermap-mini inbox-imap-python
 
 tray-position = right
-tray-maxsize = 18
 tray-padding = 5
 
 wm-restack = bspwm
@@ -74,7 +73,7 @@ interval = 5
 
 format-volume = <label-volume>
 
-label-volume = Vol: %percentage%%
+label-volume = VOL: %percentage%%
 
 format-muted = <label-muted>
 label-muted = muted
@@ -98,19 +97,19 @@ enable-scroll = false
 
 format =  <label-state>
 
-label-focused = #
-label-focused-padding = 2
+label-focused = %name%
+label-focused-padding = 1
 
-label-occupied = #
-label-occupied-padding = 2
+label-occupied = %name%
+label-occupied-padding = 1
 label-occupied-foreground = ${colors.white-alt}
 
-label-urgent = #!
-label-urgent-padding = 2
+label-urgent = %name%!
+label-urgent-padding = 1
 
 label-empty = -
 label-empty-foreground = ${colors.white-alt}
-label-empty-padding = 2
+label-empty-padding = 1
 
 
 [module/wlan]
@@ -122,7 +121,7 @@ accumulate-stats = true
 format-connected = <label-connected>
 format-disconnected = <label-disconnected>
 
-label-connected = D: %downspeed%   U: %upspeed%
+label-connected = ↓: %downspeed%   ↑: %upspeed%
 label-disconnected = Disconnected
 label-disconnected-foreground = ${colors.white-alt}
 

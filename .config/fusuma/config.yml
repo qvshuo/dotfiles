@@ -1,9 +1,13 @@
 swipe:
   3:
     left:
-      command: "bspc node -f prev.local.!hidden.window"
+      sendkey: "LEFTMETA+L"
     right:
-      command: "bspc node -f next.local.!hidden.window"
+      sendkey: "LEFTMETA+H"
+    up:
+      sendkey: "LEFTMETA+J"
+    down:
+      sendkey: "LEFTMETA+K"
   4:
     left:
       command: "bspc desktop -f next.local"
