@@ -76,7 +76,7 @@ format-volume = <label-volume>
 label-volume = VOL: %percentage%%
 
 format-muted = <label-muted>
-label-muted = muted
+label-muted = VOL: 0%
 label-muted-foreground = ${colors.white-alt}
 
 
@@ -122,7 +122,7 @@ format-connected = <label-connected>
 format-disconnected = <label-disconnected>
 
 label-connected = ↓: %downspeed%   ↑: %upspeed%
-label-disconnected = Disconnected
+label-disconnected = ↑↓: 0
 label-disconnected-foreground = ${colors.white-alt}
 
 
