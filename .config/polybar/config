@@ -2,6 +2,7 @@
 transparency = #00000000
 white = #ffffff
 white-alt = #80ffffff
+white-alt2 = #C0ffffff
 
 [bar/bsp]
 fixed-center = true
@@ -11,6 +12,8 @@ height = 30
 
 background = ${colors.transparency}
 foreground = ${colors.white}
+
+line-size = 2
 
 padding-left = 3
 padding-right = 3
@@ -101,10 +104,11 @@ label-focused = %name%
 label-focused-padding = 1
 
 label-occupied = %name%
-label-occupied-padding = 1
 label-occupied-foreground = ${colors.white-alt}
+label-occupied-padding = 1
 
-label-urgent = %name%!
+label-urgent = %name%
+label-urgent-foreground = ${colors.white-alt2}
 label-urgent-padding = 1
 
 label-empty = -
