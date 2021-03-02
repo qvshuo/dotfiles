@@ -16,7 +16,7 @@ swipe:
     up:
       command: "bspc desktop -f '^1'"
     down:
-      command: "bspc desktop -f last"
+      sendkey: "LEFTMETA+TAB"
 
 interval:
   swipe: 0.75
